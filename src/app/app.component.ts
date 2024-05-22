@@ -10,8 +10,9 @@ export class AppComponent implements OnInit {
   worker!: Worker;
   sharedWorker!: SharedWorker;
 
+  //shared worker ki te7eb techouf results bin multiple tabs wala instance meta3 browser 
+
   ngOnInit(): void {
-    console.log(import.meta.url);
     this.#initWorker();
     this.#initSharedWorker();
     // const result = this.#generateFibonacci(42);
